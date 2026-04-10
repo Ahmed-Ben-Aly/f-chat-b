@@ -1,0 +1,194 @@
+Reusing configuration cache.
+> Task :composeApp:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :composeApp:convertXmlValueResourcesForDesktopMain NO-SOURCE
+> Task :composeApp:convertXmlValueResourcesForCommonMain NO-SOURCE
+> Task :composeApp:copyNonXmlValueResourcesForCommonMain NO-SOURCE
+> Task :composeApp:copyNonXmlValueResourcesForDesktopMain NO-SOURCE
+> Task :composeApp:generateExpectResourceCollectorsForCommonMain UP-TO-DATE
+> Task :composeApp:generateComposeResClass UP-TO-DATE
+> Task :composeApp:prepareAppResources NO-SOURCE
+> Task :composeApp:prepareComposeResourcesTaskForCommonMain NO-SOURCE
+> Task :composeApp:prepareComposeResourcesTaskForDesktopMain NO-SOURCE
+> Task :composeApp:generateResourceAccessorsForCommonMain NO-SOURCE
+> Task :composeApp:generateResourceAccessorsForDesktopMain NO-SOURCE
+> Task :composeApp:assembleDesktopMainResources UP-TO-DATE
+> Task :composeApp:generateActualResourceCollectorsForDesktopMain UP-TO-DATE
+> Task :composeApp:desktopProcessResources UP-TO-DATE
+> Task :composeApp:compileKotlinDesktop UP-TO-DATE
+> Task :composeApp:desktopMainClasses UP-TO-DATE
+> Task :composeApp:desktopJar UP-TO-DATE
+
+> Task :composeApp:run
+Exception in thread "main" java.lang.NoSuchMethodError: 'void androidx.savedstate.SavedStateRegistryController.performRestore(androidx.core.bundle.Bundle)'
+	at androidx.navigation.NavBackStackEntry.updateState(NavBackStackEntry.jb.kt:153)
+	at androidx.navigation.NavBackStackEntry.setMaxLifecycle(NavBackStackEntry.jb.kt:134)
+	at androidx.navigation.NavController.updateBackStackLifecycle$navigation_runtime(NavController.jb.kt:811)
+	at androidx.navigation.NavController.dispatchOnDestinationChanged(NavController.jb.kt:703)
+	at androidx.navigation.NavController.navigate(NavController.jb.kt:1125)
+	at androidx.navigation.NavController.onGraphCreated(NavController.jb.kt:934)
+	at androidx.navigation.NavController.setGraph(NavController.jb.kt:851)
+	at androidx.navigation.NavController.setGraph(NavController.jb.kt:58)
+	at androidx.navigation.compose.NavHostKt.NavHost(NavHost.kt:516)
+	at androidx.navigation.compose.NavHostKt.NavHost(NavHost.kt:231)
+	at com.ahmed.familychat.ui.navigation.NavGraphKt.FamilyChatNavGraph(NavGraph.kt:35)
+	at com.ahmed.familychat.ComposableSingletons$AppMainKt$lambda-1$1.invoke(AppMain.kt:14)
+	at com.ahmed.familychat.ComposableSingletons$AppMainKt$lambda-1$1.invoke(AppMain.kt:13)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:121)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:51)
+	at androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:384)
+	at androidx.compose.material3.TextKt.ProvideTextStyle(Text.kt:349)
+	at androidx.compose.material3.MaterialThemeKt$MaterialTheme$1.invoke(MaterialTheme.kt:69)
+	at androidx.compose.material3.MaterialThemeKt$MaterialTheme$1.invoke(MaterialTheme.kt:68)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:121)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:51)
+	at androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:364)
+	at androidx.compose.material3.MaterialThemeKt.MaterialTheme(MaterialTheme.kt:60)
+	at com.ahmed.familychat.ui.theme.ThemeKt.FamilyChatTheme(Theme.kt:37)
+	at com.ahmed.familychat.ComposableSingletons$AppMainKt$lambda-2$1.invoke(AppMain.kt:13)
+	at com.ahmed.familychat.ComposableSingletons$AppMainKt$lambda-2$1.invoke(AppMain.kt:12)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:130)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:51)
+	at androidx.compose.ui.awt.ComposeWindow$setContent$5.invoke(ComposeWindow.desktop.kt:157)
+	at androidx.compose.ui.awt.ComposeWindow$setContent$5.invoke(ComposeWindow.desktop.kt:156)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:121)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:51)
+	at androidx.compose.ui.awt.WindowContentLayout_desktopKt.WindowContentLayout(WindowContentLayout.desktop.kt:108)
+	at androidx.compose.ui.awt.ComposeWindowPanel$setContent$3$1.invoke(ComposeWindowPanel.desktop.kt:142)
+	at androidx.compose.ui.awt.ComposeWindowPanel$setContent$3$1.invoke(ComposeWindowPanel.desktop.kt:141)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:121)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:51)
+	at androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:384)
+	at androidx.compose.ui.awt.ComposeWindowPanel$setContent$3.invoke(ComposeWindowPanel.desktop.kt:139)
+	at androidx.compose.ui.awt.ComposeWindowPanel$setContent$3.invoke(ComposeWindowPanel.desktop.kt:138)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:121)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:51)
+	at androidx.compose.ui.scene.ComposeContainer$setContent$1$1.invoke(ComposeContainer.desktop.kt:340)
+	at androidx.compose.ui.scene.ComposeContainer$setContent$1$1.invoke(ComposeContainer.desktop.kt:339)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:121)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:51)
+	at androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:364)
+	at androidx.compose.ui.scene.ComposeContainer_desktopKt.ProvideContainerCompositionLocals(ComposeContainer.desktop.kt:532)
+	at androidx.compose.ui.scene.ComposeContainer_desktopKt.access$ProvideContainerCompositionLocals(ComposeContainer.desktop.kt:1)
+	at androidx.compose.ui.scene.ComposeContainer$setContent$1.invoke(ComposeContainer.desktop.kt:339)
+	at androidx.compose.ui.scene.ComposeContainer$setContent$1.invoke(ComposeContainer.desktop.kt:338)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:121)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:51)
+	at androidx.compose.ui.scene.ComposeSceneMediator$setContent$1$1$1$1.invoke(ComposeSceneMediator.desktop.kt:551)
+	at androidx.compose.ui.scene.ComposeSceneMediator$setContent$1$1$1$1.invoke(ComposeSceneMediator.desktop.kt:550)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:121)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:51)
+	at androidx.compose.ui.layout.OverlayLayout_skikoKt.OverlayLayout(OverlayLayout.skiko.kt:77)
+	at androidx.compose.ui.viewinterop.InteropContainer_skikoKt.TrackInteropPlacementContainer(InteropContainer.skiko.kt:138)
+	at androidx.compose.ui.viewinterop.SwingInteropContainer$invoke$1.invoke(SwingInteropContainer.desktop.kt:276)
+	at androidx.compose.ui.viewinterop.SwingInteropContainer$invoke$1.invoke(SwingInteropContainer.desktop.kt:275)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:121)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:51)
+	at androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:384)
+	at androidx.compose.ui.viewinterop.SwingInteropContainer.invoke(SwingInteropContainer.desktop.kt:273)
+	at androidx.compose.ui.scene.ComposeSceneMediator$setContent$1$1$1.invoke(ComposeSceneMediator.desktop.kt:550)
+	at androidx.compose.ui.scene.ComposeSceneMediator$setContent$1$1$1.invoke(ComposeSceneMediator.desktop.kt:549)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:121)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:51)
+	at androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:364)
+	at androidx.compose.ui.scene.BaseComposeScene$setContent$1$2.invoke(BaseComposeScene.skiko.kt:147)
+	at androidx.compose.ui.scene.BaseComposeScene$setContent$1$2.invoke(BaseComposeScene.skiko.kt:146)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:121)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:51)
+	at androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:364)
+	at androidx.compose.ui.platform.PlatformCompositionLocalsKt.ProvidePlatformCompositionLocals(PlatformCompositionLocals.kt:26)
+	at androidx.compose.ui.platform.Wrapper_skikoKt$setContent$2$1$2.invoke(Wrapper.skiko.kt:51)
+	at androidx.compose.ui.platform.Wrapper_skikoKt$setContent$2$1$2.invoke(Wrapper.skiko.kt:50)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:121)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:51)
+	at androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:364)
+	at androidx.compose.ui.platform.CompositionLocalsKt.ProvideCommonCompositionLocals(CompositionLocals.kt:216)
+	at androidx.compose.ui.platform.Wrapper_skikoKt$setContent$2$1.invoke(Wrapper.skiko.kt:47)
+	at androidx.compose.ui.platform.Wrapper_skikoKt$setContent$2$1.invoke(Wrapper.skiko.kt:46)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:121)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:51)
+	at androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:364)
+	at androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:401)
+	at androidx.compose.ui.platform.Wrapper_skikoKt.provide(Wrapper.skiko.kt:63)
+	at androidx.compose.ui.platform.Wrapper_skikoKt.access$provide(Wrapper.skiko.kt:1)
+	at androidx.compose.ui.platform.Wrapper_skikoKt$setContent$2.invoke(Wrapper.skiko.kt:46)
+	at androidx.compose.ui.platform.Wrapper_skikoKt$setContent$2.invoke(Wrapper.skiko.kt:45)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:121)
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:51)
+	at androidx.compose.runtime.internal.Utils_jvmKt.invokeComposable(Utils.jvm.kt:27)
+	at androidx.compose.runtime.ComposerImpl.doCompose-aFTiNEg(Composer.kt:3694)
+	at androidx.compose.runtime.ComposerImpl.composeContent--ZbOJvo$runtime(Composer.kt:3616)
+	at androidx.compose.runtime.CompositionImpl.composeContent(Composition.kt:792)
+	at androidx.compose.runtime.Recomposer.composeInitial$runtime(Recomposer.kt:1132)
+	at androidx.compose.runtime.CompositionImpl.composeInitial(Composition.kt:677)
+	at androidx.compose.runtime.CompositionImpl.setContent(Composition.kt:616)
+	at androidx.compose.ui.platform.Wrapper_skikoKt.setContent(Wrapper.skiko.kt:45)
+	at androidx.compose.ui.scene.CanvasLayersComposeSceneImpl.createComposition(CanvasLayersComposeScene.skiko.kt:208)
+	at androidx.compose.ui.scene.BaseComposeScene.setContent(BaseComposeScene.skiko.kt:146)
+	at androidx.compose.ui.scene.ComposeSceneMediator.setContent$lambda$12(ComposeSceneMediator.desktop.kt:549)
+	at androidx.compose.ui.scene.ComposeSceneMediator.onComponentAttached(ComposeSceneMediator.desktop.kt:519)
+	at androidx.compose.ui.scene.ComposeContainer.addNotify(ComposeContainer.desktop.kt:278)
+	at androidx.compose.ui.awt.ComposeWindowPanel.addNotify(ComposeWindowPanel.desktop.kt:119)
+	at java.desktop/java.awt.Container.addNotify(Container.java:2804)
+	at java.desktop/javax.swing.JComponent.addNotify(JComponent.java:4839)
+	at java.desktop/java.awt.Container.addNotify(Container.java:2804)
+	at java.desktop/javax.swing.JComponent.addNotify(JComponent.java:4839)
+	at java.desktop/java.awt.Container.addNotify(Container.java:2804)
+	at java.desktop/javax.swing.JComponent.addNotify(JComponent.java:4839)
+	at java.desktop/javax.swing.JRootPane.addNotify(JRootPane.java:721)
+	at java.desktop/java.awt.Container.addNotify(Container.java:2804)
+	at java.desktop/java.awt.Window.addNotify(Window.java:791)
+	at java.desktop/java.awt.Frame.addNotify(Frame.java:495)
+	at java.desktop/java.awt.Window.pack(Window.java:829)
+	at androidx.compose.ui.util.Windows_desktopKt.setSizeImpl-6HolHcs(Windows.desktop.kt:115)
+	at androidx.compose.ui.util.Windows_desktopKt.setSizeSafely-hQcJfNw(Windows.desktop.kt:54)
+	at androidx.compose.ui.window.Window_desktopKt.Window$lambda$23$lambda$22(Window.desktop.kt:240)
+	at androidx.compose.ui.window.Window_desktopKt.Window$lambda$40$lambda$39(Window.desktop.kt:621)
+	at androidx.compose.ui.window.AwtWindow_desktopKt.AwtWindow$lambda$7$lambda$6(AwtWindow.desktop.kt:78)
+	at androidx.compose.ui.util.UpdateEffect_desktopKt.UpdateEffect$lambda$8$lambda$7$performUpdate$lambda$4(UpdateEffect.desktop.kt:59)
+	at androidx.compose.runtime.snapshots.Snapshot$Companion.observe(Snapshot.kt:2496)
+	at androidx.compose.runtime.snapshots.SnapshotStateObserver$ObservedScopeMap.observe(SnapshotStateObserver.kt:460)
+	at androidx.compose.runtime.snapshots.SnapshotStateObserver.observeReads(SnapshotStateObserver.kt:244)
+	at androidx.compose.ui.util.UpdateEffect_desktopKt.UpdateEffect$lambda$8$lambda$7$performUpdate(UpdateEffect.desktop.kt:55)
+	at androidx.compose.ui.util.UpdateEffect_desktopKt.UpdateEffect$lambda$8$lambda$7(UpdateEffect.desktop.kt:64)
+	at androidx.compose.runtime.DisposableEffectImpl.onRemembered(Effects.kt:83)
+	at androidx.compose.runtime.internal.RememberEventDispatcher.dispatchRememberList(RememberEventDispatcher.kt:182)
+	at androidx.compose.runtime.internal.RememberEventDispatcher.dispatchRememberObservers(RememberEventDispatcher.kt:174)
+	at androidx.compose.runtime.CompositionImpl.applyChangesInLocked(Composition.kt:1044)
+	at androidx.compose.runtime.CompositionImpl.applyChanges(Composition.kt:1067)
+	at androidx.compose.runtime.Recomposer.composeInitial$runtime(Recomposer.kt:1159)
+	at androidx.compose.runtime.CompositionImpl.composeInitial(Composition.kt:677)
+	at androidx.compose.runtime.CompositionImpl.setContent(Composition.kt:616)
+	at androidx.compose.ui.window.Application_desktopKt$awaitApplication$2$1$2.invokeSuspend(Application.desktop.kt:221)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+> Task :composeApp:run FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':composeApp:run'.
+> Process 'command '/usr/lib/jvm/temurin-17-jdk-amd64/bin/java'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 5s
+8 actionable tasks: 1 executed, 7 up-to-date
+Configuration cache entry reused.
